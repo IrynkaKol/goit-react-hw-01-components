@@ -22,7 +22,7 @@ const TransactionHistory = ({ items }) => (
   </table>
 );
 
-TransactionHistory.PropTypes = {
+TransactionHistory.propTypes = {
   items: PropTypes.arrayOf(
     PropTypes.shape({
       id: PropTypes.string.isRequired,
