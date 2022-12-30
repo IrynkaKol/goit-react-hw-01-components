@@ -1,9 +1,8 @@
 import PropTypes from 'prop-types';
+import "./Profile.css"
 
 const Profile = ({ avatar, username, tag, location, stats }) => (
-  <div
-    style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}
-  >
+  
     <div className="profile">
       <div className="description">
         <img src={avatar} alt={username} className="avatar" />
@@ -27,14 +26,14 @@ const Profile = ({ avatar, username, tag, location, stats }) => (
         </li>
       </ul>
     </div>
-  </div>
+  
 );
 Profile.propTypes = {
-  avatar: PropTypes.string,
-  username: PropTypes.string,
-  tag: PropTypes.string,
-  location: PropTypes.string,
-  stats: PropTypes.object,
+  avatar: PropTypes.string.isRequired,
+  username: PropTypes.string.isRequired,
+  tag: PropTypes.string.isRequired,
+  location: PropTypes.string.isRequired,
+  stats: PropTypes.object.isRequired,
 };
 
 export default Profile;

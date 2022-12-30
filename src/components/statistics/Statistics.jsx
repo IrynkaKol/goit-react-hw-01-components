@@ -1,9 +1,7 @@
 import PropTypes from 'prop-types';
 
 const Statistics = ({ title, stats }) => (
-  <div
-    style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}
-  >
+  <div>
     <section className="statistics">
       {title && <h2 className="title">{title}</h2>}
       <ul className="stat-list">
@@ -22,9 +20,9 @@ Statistics.propTypes = {
   title: PropTypes.string,
   stats: PropTypes.arrayOf(
     PropTypes.shape({
-      id: PropTypes.string,
-      label: PropTypes.string,
-      percentage: PropTypes.number,
+      id: PropTypes.string.isRequired,
+      label: PropTypes.string.isRequired,
+      percentage: PropTypes.number.isRequired,
     })
   ),
 };
