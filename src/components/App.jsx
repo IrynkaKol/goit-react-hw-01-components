@@ -13,6 +13,7 @@ export const App = () => {
     <div
       style={{
         display: 'flex',
+        gap: '15',
         flexDirection: 'column',
         justifyContent: 'center',
         alignItems: 'center',
@@ -34,7 +35,7 @@ export const App = () => {
 
       <FriendList friends={friends} />
 
-      <TransactionHistory items={transactions} />; 
+      <TransactionHistory items={transactions} /> 
     </div>
   );
 };
