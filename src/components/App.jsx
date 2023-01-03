@@ -13,7 +13,7 @@ export const App = () => {
     <div
       style={{
         display: 'flex',
-        gap: '15',
+        gap: 45,
         flexDirection: 'column',
         justifyContent: 'center',
         alignItems: 'center',
