@@ -1,0 +1,45 @@
+.friendList {
+    list-style: none;
+    width: 30%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.item {
+   
+    display: grid;
+    grid-template-columns: 1fr 2fr 3fr;
+    box-shadow: rgb(20, 223, 223) 0px 15px 15px;
+    padding: 20px;
+    margin-top: 25px;
+    background: rgb(238, 232, 232);
+    border-radius: 15px;
+    
+    
+}
+.status {
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    
+    margin: auto auto;
+}
+
+.online {
+    composes: status;
+    background: green;
+}
+.offline {
+    composes: status;
+    background: red;
+
+}
+
+.avatarFriend {
+    margin: 0 auto;
+}
+
+.name {
+    margin: 0;
+    font-weight: bold;
+}
